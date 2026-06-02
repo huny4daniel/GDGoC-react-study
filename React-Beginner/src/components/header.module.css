@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 9px 40px;
+    border-bottom: 1px solid #DFDFDF;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.header img {
+    height: 40px;
+    width: auto;
+}
+
+.loginButton {
+    background-color: #3692FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 128px;
+    height: 40px;
+    padding: 8px 16px;
+    cursor: pointer;
+}

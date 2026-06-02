@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+    background-color: #1A1A1A;
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #9CA3AF;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+}
+
+.links a {
+    color: #9CA3AF;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #FFFFFF;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}

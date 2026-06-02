@@ -1,27 +1,41 @@
-import { useState } from 'react'
+import Header from './components/header'
+import HeroSection from './components/hero-section'
+import FeatureSection from './components/feature-section'
+import TrustSection from './components/trust-section'
+import Footer from './components/footer'
+import hotItemImg from './assets/hot_item.png'
+import searchImg from './assets/search.png'
+import registerImg from './assets/register.png'
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <main className="flex min-h-screen items-center justify-center bg-slate-950 p-6 text-slate-100">
-      <section className="w-full max-w-md rounded-2xl border border-slate-700 bg-slate-900 p-8 shadow-lg">
-        <p className="text-sm font-medium text-cyan-400">
-          React + Vite + Tailwind
-        </p>
-        <h1 className="mt-2 text-3xl font-bold">React-Beginner</h1>
-        <p className="mt-3 text-slate-300">
-          프로젝트 생성 완료. Tailwind 클래스가 정상적으로 적용되고 있습니다.
-        </p>
-        <div className="flex gap-2 flex-row items-center mt-6">
-          <button
-            content={`Count: ${count}`}
-            onClick={() => setCount((prev) => prev + 1)}
-          />
-          <button content="Reset" onClick={() => setCount(0)} />
-        </div>
-      </section>
-    </main>
+    <>
+      <Header />
+      <HeroSection />
+      <FeatureSection
+        tag="Hot Item"
+        title={"인기 상품을\n확인해 보세요"}
+        description={"가장 HOT한 중고거래 물품을\n판다 마켓에서 확인해 보세요"}
+        image={hotItemImg}
+        imagePosition="right"
+      />
+      <FeatureSection
+        tag="Search"
+        title={"구매를 원하는\n상품을 검색하세요"}
+        description={"구매하고 싶은 물품을 검색해서\n쉽게 찾아보세요"}
+        image={searchImg}
+        imagePosition="left"
+      />
+      <FeatureSection
+        tag="Register"
+        title={"판매를 원하는\n상품을 등록하세요"}
+        description={"어떤 물건이든 판매하고 싶은 상품을\n쉽게 등록하세요"}
+        image={registerImg}
+        imagePosition="right"
+      />
+      <TrustSection />
+      <Footer />
+    </>
   )
 }
 
